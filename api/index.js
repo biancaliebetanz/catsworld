@@ -14,4 +14,4 @@ export async function getFacts(){
     return resp.data.data
 }
 
-getFacts()
+// adicionar a api do unsplash para sempre mostrar fotos de gatos aleatorias

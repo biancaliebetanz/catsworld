@@ -1,7 +1,8 @@
-document.addEventListener("DOMContentLoaded", function(){
-    function newFacts(){
-        const facts = document.querySelectorAll(".text")
-        console.log(facts)
-    }
-    newFacts();
-})
+import { getFact, getFacts } from "../api";
+
+const facts = document.querySelectorAll(".text");
+const button = document.querySelector(".btn-new-fact");
+
+button.addEventListener("click", async function() {
+    console.log('oi')
+    })
