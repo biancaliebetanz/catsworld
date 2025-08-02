@@ -35,7 +35,7 @@ body {
 }
 
 .fact-box-scroll {
-    animation: scroll 1.5s linear infinite;
+    animation: scroll 2s linear infinite;
 }
 
 .title {
@@ -76,12 +76,12 @@ body {
         top: 0;
         opacity: 100%;
     }
-    25% {
+    40% {
         position: relative;
         top: -200dvh;
         opacity: 0%;
     }
-    50% {
+    60% {
         position: relative;
         top: 200dvh;
         opacity: 0%;

@@ -22,5 +22,5 @@ card.addEventListener("dragstart", async function(){
     setTimeout(function(){
         fact.textContent = newFact;
         card.classList.remove("fact-box-scroll")
-    }, 1500)
+    }, 2000)
 })
