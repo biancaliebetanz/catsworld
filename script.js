@@ -14,8 +14,13 @@ async function getFacts(){
 
 const fact = document.querySelector(".text");
 const button = document.querySelector(".btn-new-fact");
+const card = document.querySelector(".fact-box")
 
-button.addEventListener("click", async function() {
+card.addEventListener("dragstart", async function(){
     newFact = await getFact();
-    fact.textContent = newFact;
-    })
+    card.classList.add("fact-box-scroll")
+    setTimeout(function(){
+        fact.textContent = newFact;
+        card.classList.remove("fact-box-scroll")
+    }, 1500)
+})
