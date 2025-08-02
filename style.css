@@ -18,6 +18,7 @@ body {
     align-items: center;
     height: 100dvh;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .fact-box {
@@ -61,4 +62,19 @@ body {
     object-fit: cover;
     image-resolution: initial;
     border-radius: 30px;
+}
+
+@keyframes scroll {
+    from {
+        position: relative;
+        top: 0;
+    }
+    50% {
+        position: relative;
+        top: -200dvh;
+        opacity: 0%;
+    }
+    to {
+        top: 200dvh;
+    }
 }
