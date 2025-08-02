@@ -1,0 +1,64 @@
+:root {
+    --branco: #fff;
+    --principal: rgb(255, 197, 240);
+    --escura: rgb(248, 117, 213);
+    --desktopW: 600px;
+    --desktopH: 600px;
+    --desktopFact: 22px;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100dvh;
+    justify-content: space-around;
+}
+
+.fact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--principal);
+    overflow: hidden;
+    padding: 10px;
+    gap: 5px;
+}
+
+.title {
+    color: var(--principal);
+}
+
+.text {
+    font-size: var(--desktopFact);
+    color: var(--branco);
+    width: var(--desktopW);
+    max-height: var(--desktopH);
+    text-align: center;
+}
+
+.btn-new-fact {
+    color: var(--branco);
+    background-color: var(--principal);
+    border: none;
+    padding: 5px 20px;
+}
+
+.btn-new-fact:hover{
+    background-color: var(--escura);
+    cursor: pointer;
+}
+
+.img {
+    width: var(--desktopW);
+    height: var(--desktopH);
+    object-fit: cover;
+    image-resolution: initial;
+    border-radius: 30px;
+}
