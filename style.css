@@ -39,6 +39,7 @@ body {
     background-color: var(--principal);
     background-position: center;
     overflow: hidden;
+    width: 50dvw;
     height: 70dvh;
     padding: 20px;
     gap: 5px;
