@@ -9,7 +9,7 @@
     --principal: rgb(255, 197, 240);
     --escura: rgb(248, 117, 213);
     --desktopH: 600px;
-    --desktopFact: 22px;
+    --desktopFact: 18px;
 }
 
 body {
@@ -35,14 +35,12 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: var(--principal);
-    background-position: center;
     overflow: hidden;
+    border: none;
     width: 50dvw;
     height: 70dvh;
-    padding: 20px;
-    gap: 15px;
     -webkit-user-drag: none;
 }
 
@@ -58,11 +56,10 @@ body {
     margin: 0px;
     font-size: var(--desktopFact);
     color: var(--preto);
-    width: 100%;
-    max-height: 100%;
     text-align: center;
     -webkit-user-drag: none;
     user-select: none;
+    margin: 3em 15px;
 }
 
 .btn-new-fact {
@@ -83,8 +80,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: var(--desktopH);
-    border-radius: 30px;
+    height: 100%;
 }
 
 @media (max-width: 800px)  {
@@ -95,14 +91,6 @@ body {
     }
     .fact-box {
         width: 80dvw;
-    }
-    .text {
-        width: 100%;
-        font-size: 16px;
-    }
-    .img {
-        height: 70%;
-        width: 100%;
     }
 }
 
