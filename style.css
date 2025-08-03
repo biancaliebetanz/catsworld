@@ -91,7 +91,7 @@ body {
     .main{
         justify-content: space-evenly;
         flex-direction: column;
-        padding: 10px;
+        padding: 0px 10px;
     }
     .fact-box {
         width: 80dvw;

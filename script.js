@@ -13,8 +13,17 @@ const unsplash = axios.create({
 
 const image = document.querySelector(".img");
 const fact = document.querySelector(".text");
-const button = document.querySelector(".btn-new-fact");
+const title = document.querySelector(".title");
 const card = document.querySelector(".fact-box")
+
+function getNewColor(){
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    if (r == 0 && g == 0 && b == 0)
+        return "rgb(255, 197, 240)"
+    return `rgb(${r}, ${g}, ${b})`;
+}
 
  async function getFact(){
     try{
@@ -56,10 +65,13 @@ async function getPic(){
     }};
 
 card.addEventListener("click", async function(){
+    const newColor = getNewColor();
     newFact = await getFact();
     newPic = await getPic();
     card.classList.add("fact-box-scroll")
     setTimeout(function(){
+        title.style.color = newColor;
+        card.style.backgroundColor = newColor
         image.style.backgroundImage = `url(${newPic})`
         fact.textContent = newFact;
         card.classList.remove("fact-box-scroll")
