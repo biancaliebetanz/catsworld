@@ -92,6 +92,9 @@ body {
     .fact-box {
         width: 80dvw;
     }
+    .fact-box-scroll {
+        animation: scroll-right 2s linear infinite;
+    }
 }
 
 @keyframes scroll-up {
@@ -113,6 +116,30 @@ body {
     to {
         position: relative;
         top: 0;
+        opacity: 100%;
+    }
+}
+
+
+@keyframes scroll-right {
+    from {
+        position: relative;
+        right: 0;
+        opacity: 100%;
+    }
+    50% {
+        position: relative;
+        right: -200dvh;
+        opacity: 0%;
+    }
+    55% {
+        position: relative;
+        right: 200dvh;
+        opacity: 0%;
+    }
+    to {
+        position: relative;
+        right: 0;
         opacity: 100%;
     }
 }
